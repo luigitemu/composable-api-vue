@@ -1,18 +1,29 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Reactive vs Ref</h1>
+    <h3>
+      <pre>{{ ironMan }}</pre>
+      <pre>{{ hulk }}</pre>
+    </h3>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import { reactive, ref } from 'vue';
+
+
 
 export default {
   name: 'HomeView',
-  components: {
-    HelloWorld
+
+  setup() {
+    const ironMan = ref({name: 'Tony Stark',age: 45,})
+    const hulk = reactive({name: 'Bruce Banner',age: 45,})
+    return {
+      ironMan,
+      hulk,
+    }
   }
 }
 </script>
+ 

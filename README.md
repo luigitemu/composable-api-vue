@@ -1,5 +1,9 @@
 # 08-compo-api
 
+
+# Description
+- This repo is part of a VueJS Course here there are some exerciese to understand the composition API in vuejs
+
 ## Project setup
 ```
 pnpm install
